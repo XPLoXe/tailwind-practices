@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@layer components {
+  input[type="search"]::-webkit-search-clear-button {
+    appearance: none;
+    margin: 0;
+    width: 0;
+    height: 0;
+  }
+  input[type="search"]::-moz-search-clear-button {
+    display: none;
+  }
+}
